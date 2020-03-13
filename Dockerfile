@@ -8,6 +8,8 @@ RUN conda config --add channels r
 RUN conda config --add channels conda-forge
 RUN conda config --add channels bioconda
 
+# Update conda
+RUN conda update -n base -c defaults conda
 
 # Install hisat2
 RUN conda install -y hisat2=2.2.0
