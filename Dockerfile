@@ -5,7 +5,6 @@ FROM conda/miniconda3
 MAINTAINER Surya Saha
 
 RUN conda config --add channels r
-RUN conda config --add channels defaults
 RUN conda config --add channels conda-forge
 RUN conda config --add channels bioconda
 
