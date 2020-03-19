@@ -1,5 +1,6 @@
 # rnaseq_aligner
 
+Slides: https://docs.google.com/presentation/d/1tZ8Li5e_5HV7fm_WdaqjHw0n141OIlNkDBlCjgdp-4o/edit?usp=sharing
 
 RNASeq alignment: Container 1
 * Remove contamination from RNAseq reads
