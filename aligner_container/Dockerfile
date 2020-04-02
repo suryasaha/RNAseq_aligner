@@ -1,10 +1,24 @@
+################# BASE IMAGE ######################
 # Set the base image to debian based miniconda3
 FROM conda/miniconda3
 
-# File Author / Maintainer
-MAINTAINER Surya Saha
+################## METADATA ######################
 LABEL maintainer="ss2489@cornell.edu"
+LABEL base.image="miniconda3"
+LABEL version="1"
+LABEL software="rnaseq_diffexp"
+LABEL software.version="beta"
+LABEL about.summary="A quality control and alignment pipeline for Illumina paired end RNAseq Fastq files."
+LABEL about.home="https://github.com/suryasaha/rnaseq_diffexp"
+LABEL about.documentation="https://github.com/suryasaha/rnaseq_diffexp/blob/master/README.md"
 
+################## MAINTAINER ######################
+# File Author / Maintainer
+MAINTAINER Surya Saha <ss2489@cornell.edu>
+
+################## INSTALLATION ######################
+
+# conda configuration
 RUN conda config --add channels r
 RUN conda config --add channels conda-forge
 RUN conda config --add channels bioconda
